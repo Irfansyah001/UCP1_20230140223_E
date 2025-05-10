@@ -1,33 +1,61 @@
 <!DOCTYPE html>
+<!-- Menentukan bahwa dokumen ini adalah HTML5 -->
 <html lang="id">
+  <!-- Bahasa utama halaman adalah Bahasa Indonesia -->
   <head>
     <meta charset="UTF-8" />
+    <!-- Mengatur karakter ke UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Membuat halaman responsif di semua perangkat -->
     <title>Tentang EduPro</title>
+    <!-- Judul tab browser -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan file CSS eksternal -->
   </head>
+
   <body class="dark-theme">
+    <!-- Memulai isi halaman dengan tema gelap -->
     <header>
+      <!-- Bagian atas halaman -->
       <div class="logo">
+        <!-- Container logo -->
         <img
           src="images/edupro-logo-hori.png"
-          alt="EduPro Logo"
-          style="height: 40px"
+          <!--
+          Menampilkan
+          gambar
+          logo
+          --
+        />
+        alt="EduPro Logo"
+        <!-- Teks alternatif jika gambar tidak muncul -->
+        style="height: 40px"
+        <!-- Mengatur tinggi logo -->
         />
       </div>
       <nav>
+        <!-- Navigasi utama -->
         <ul>
+          <!-- Daftar menu -->
           <li><a href="index.html">Home</a></li>
+          <!-- Link ke halaman utama -->
           <li><a href="about.html">About</a></li>
+          <!-- Link ke halaman ini -->
           <li><a href="features.html">Fitur</a></li>
+          <!-- Link ke halaman fitur -->
           <li><a href="contact.html">Kontak</a></li>
+          <!-- Link ke halaman kontak -->
         </ul>
       </nav>
     </header>
 
     <main style="padding: 60px 40px">
+      <!-- Isi utama halaman -->
       <section class="about-section">
+        <!-- Bagian tentang kami -->
         <h1 style="text-align: center; margin-bottom: 30px">Tentang Kami</h1>
+        <!-- Judul bagian -->
+
         <p
           style="
             max-width: 800px;
@@ -41,18 +69,24 @@
           berkomitmen membantu pelajar Indonesia mencapai potensi maksimal
           mereka melalui teknologi yang mudah diakses dan menyenangkan.
         </p>
+        <!-- Penjelasan singkat tentang EduPro -->
 
         <div class="about-grid">
+          <!-- Grid tiga kotak: visi, misi, tim -->
           <div class="about-box">
+            <!-- Kotak visi -->
             <h2>🎯 Visi</h2>
             <p>
               Meningkatkan kualitas pendidikan melalui teknologi yang inklusif
               dan inovatif.
             </p>
           </div>
+
           <div class="about-box">
+            <!-- Kotak misi -->
             <h2>🚀 Misi</h2>
             <ul>
+              <!-- Daftar misi EduPro -->
               <li>
                 Menyediakan materi pembelajaran yang relevan dan berkualitas.
               </li>
@@ -62,7 +96,9 @@
               </li>
             </ul>
           </div>
+
           <div class="about-box">
+            <!-- Kotak tim -->
             <h2>🧠 Tim Pengembang</h2>
             <p>
               Kami adalah tim muda kreatif dari latar belakang teknologi dan
@@ -74,9 +110,12 @@
       </section>
 
       <section style="margin-top: 60px">
+        <!-- Bagian perbandingan kompetitor -->
         <h2 style="text-align: center; margin-bottom: 10px">
           Keunggulan EduPro Dibanding Kompetitor
         </h2>
+        <!-- Judul perbandingan -->
+
         <p
           style="
             text-align: center;
@@ -90,23 +129,34 @@
           kecerdasan pembelajaran adaptif, serta dukungan pembelajaran yang
           menyeluruh. Lihat perbandingan berikut:
         </p>
+        <!-- Penjelasan sebelum tabel -->
 
         <div style="overflow-x: auto">
+          <!-- Membuat tabel bisa digeser jika layar kecil -->
           <table class="comparison-table">
+            <!-- Tabel perbandingan -->
             <thead>
               <tr>
                 <th>Fitur</th>
+                <!-- Judul kolom fitur -->
                 <th>EduPro</th>
+                <!-- Kolom EduPro -->
                 <th>Kompetitor A</th>
+                <!-- Kolom Kompetitor A -->
                 <th>Kompetitor B</th>
+                <!-- Kolom Kompetitor B -->
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Akses Materi Gratis</td>
+                <!-- Nama fitur -->
                 <td><span class="icon-yes">✔</span></td>
+                <!-- EduPro punya -->
                 <td><span class="icon-no">✘</span></td>
+                <!-- Kompetitor A tidak punya -->
                 <td><span class="icon-no">✘</span></td>
+                <!-- Kompetitor B tidak punya -->
               </tr>
               <tr>
                 <td>AI Pembelajaran Adaptif</td>
@@ -129,14 +179,19 @@
             </tbody>
           </table>
         </div>
+
         <p style="text-align: center; margin-top: 30px">
           <a href="contact.html" class="btn-glow">Dapatkan Akses Sekarang</a>
         </p>
+        <!-- CTA untuk daftar setelah melihat keunggulan -->
       </section>
     </main>
 
     <footer>
+      <!-- Bagian footer di bawah -->
       <p>&copy; 2025 EduPro. All rights reserved.</p>
+      <!-- Teks hak cipta -->
     </footer>
   </body>
 </html>
+<!-- Menutup tag body dan html -->

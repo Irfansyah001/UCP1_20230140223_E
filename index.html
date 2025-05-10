@@ -1,59 +1,95 @@
 <!DOCTYPE html>
+<!-- Menentukan bahwa ini adalah dokumen HTML5 -->
 <html lang="en">
+  <!-- Bahasa utama dokumen HTML adalah Inggris -->
   <head>
     <meta charset="UTF-8" />
+    <!-- Mengatur karakter ke UTF-8 agar bisa menampilkan semua karakter -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Membuat halaman responsif di semua perangkat -->
     <link rel="icon" href="images/edupro-logo.png" type="image/png" />
+    <!-- Menambahkan ikon kecil di tab browser -->
     <title>EduPro - Learn Smart, Anywhere</title>
+    <!-- Judul halaman yang tampil di tab browser -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Menghubungkan halaman dengan file CSS eksternal -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <!-- Menggunakan animasi scroll AOS (Animate On Scroll) -->
     <!-- AOS CSS -->
   </head>
 
   <body class="dark-theme">
+    <!-- Memulai isi halaman dengan tema gelap -->
     <header>
+      <!-- Bagian atas halaman, berisi logo dan menu navigasi -->
       <div class="logo">
-        <img
-          src="images/edupro-logo-hori.png"
-          alt="EduPro Logo"
-          style="height: 40px"
+        <!-- Kotak untuk menampilkan logo -->
+        <img src="images/edupro-logo-hori.png" <!-- Gambar logo horizontal -- />
+        alt="EduPro Logo"
+        <!-- Teks alternatif jika gambar gagal dimuat -->
+        style="height: 40px"
+        <!-- Ukuran tinggi logo -->
         />
       </div>
       <nav>
+        <!-- Bagian navigasi -->
         <ul>
+          <!-- Daftar menu -->
           <li><a href="index.html">Home</a></li>
+          <!-- Menu ke halaman utama -->
           <li><a href="about.html">About</a></li>
+          <!-- Menu ke halaman tentang -->
           <li><a href="features.html">Fitur</a></li>
+          <!-- Menu ke halaman fitur -->
           <li><a href="contact.html">Kontak</a></li>
+          <!-- Menu ke halaman kontak -->
         </ul>
       </nav>
     </header>
 
     <section class="hero">
+      <!-- Bagian hero/banner utama -->
       <div class="hero-text">
+        <!-- Teks utama yang menarik perhatian -->
         <h1>Belajar Lebih Cerdas, Kapan Saja & Di Mana Saja</h1>
+        <!-- Judul utama -->
         <p>
           EduPro adalah platform pembelajaran interaktif berbasis digital dengan
           materi berkualitas dan fitur premium untuk semua usia.
         </p>
+        <!-- Deskripsi singkat -->
         <a href="features.html" class="btn">Jelajahi Fitur</a>
+        <!-- Tombol menuju halaman fitur -->
         <a href="contact.html" class="btn-glow">Daftar Sekarang</a>
+        <!-- Tombol menuju halaman pendaftaran -->
       </div>
 
       <div class="hero-image">
+        <!-- Bagian gambar pendukung -->
         <img
           src="images/course-dashboard-preview.png"
-          alt="EduTech Dashboard preview"
+          <!--
+          Gambar
+          preview
+          dashboard
+          --
+        />
+        alt="EduTech Dashboard preview"
+        <!-- Teks alternatif jika gambar gagal dimuat -->
         />
       </div>
     </section>
 
     <section class="testimonials" style="padding: 60px 40px">
+      <!-- Bagian testimoni -->
       <h2 style="text-align: center; margin-bottom: 40px">
         Apa Kata Pengguna?
       </h2>
+      <!-- Judul bagian testimoni -->
       <div class="testimonial-boxes">
+        <!-- Container untuk semua testimoni -->
         <div class="testimonial-card">
+          <!-- Kartu testimoni 1 -->
           <p>
             "Platformnya keren banget! Materi mudah dimengerti dan videonya
             menarik."
@@ -61,6 +97,7 @@
           <span>- Arif, Mahasiswa</span>
         </div>
         <div class="testimonial-card">
+          <!-- Kartu testimoni 2 -->
           <p>
             "Saya suka fitur AI-nya. Bisa bantu fokus ke bagian yang saya
             lemah."
@@ -68,6 +105,7 @@
           <span>- Dinda, Pelajar SMA</span>
         </div>
         <div class="testimonial-card">
+          <!-- Kartu testimoni 3 -->
           <p>"EduPro bikin belajar jadi menyenangkan dan fleksibel!"</p>
           <span>- Raka, Profesional IT</span>
         </div>
@@ -75,11 +113,15 @@
     </section>
 
     <section class="why-choose-us" style="padding: 60px 40px">
+      <!-- Alasan memilih EduPro -->
       <h2 style="text-align: center; margin-bottom: 40px">
         Mengapa Memilih EduPro?
       </h2>
+      <!-- Judul bagian -->
       <div class="why-container">
+        <!-- Container untuk konten -->
         <div class="why-text">
+          <!-- List alasan -->
           <ul>
             <li>✅ Akses seumur hidup ke semua materi</li>
             <li>✅ Kuis interaktif & leaderboard</li>
@@ -87,25 +129,32 @@
           </ul>
         </div>
         <div class="why-image">
+          <!-- Gambar pendukung -->
           <img src="images/certificate.png" alt="Sertifikat Digital EduPro" />
         </div>
       </div>
     </section>
 
     <section class="stats-section" style="padding: 60px 40px">
+      <!-- Statistik EduPro -->
       <h2 style="text-align: center; margin-bottom: 40px">
         Kenapa Memilih EduPro?
       </h2>
+      <!-- Judul bagian statistik -->
       <div class="stats-grid">
+        <!-- Grid statistik -->
         <div class="stat-card" data-aos="fade-up">
+          <!-- Kartu statistik 1 -->
           <h3>10.000+</h3>
           <p>Pengguna Terdaftar</p>
         </div>
         <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+          <!-- Statistik 2 -->
           <h3>250+</h3>
           <p>Kursus Interaktif</p>
         </div>
         <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+          <!-- Statistik 3 -->
           <h3>98%</h3>
           <p>Tingkat Kepuasan</p>
         </div>
@@ -113,22 +162,28 @@
     </section>
 
     <div id="promoModal" class="promo-modal">
+      <!-- Popup promo -->
       <div class="promo-content">
         <h2>🎁 <span class="highlight">PROMO KHUSUS!</span></h2>
+        <!-- Judul promo -->
         <p>
           Dapatkan <span class="big-discount">diskon 30%</span> untuk semua
           kursus <strong>bulan ini!</strong>
         </p>
+        <!-- Isi promo -->
         <button id="closePromoBtn">Tutup</button>
+        <!-- Tombol tutup popup -->
       </div>
     </div>
 
     <section class="faq-section" style="padding: 60px 40px">
+      <!-- Bagian FAQ -->
       <h2 style="text-align: center; margin-bottom: 30px">
         Pertanyaan yang Sering Ditanyakan
       </h2>
 
       <details class="faq-item">
+        <!-- Item FAQ 1 -->
         <summary>Apakah EduPro gratis digunakan?</summary>
         <p>
           Ya, kamu bisa mulai dengan versi gratis. Tersedia juga paket premium
@@ -137,6 +192,7 @@
       </details>
 
       <details class="faq-item">
+        <!-- Item FAQ 2 -->
         <summary>Apakah bisa belajar lewat HP?</summary>
         <p>
           EduPro mendukung pembelajaran dari berbagai perangkat, termasuk HP dan
@@ -145,6 +201,7 @@
       </details>
 
       <details class="faq-item">
+        <!-- Item FAQ 3 -->
         <summary>Bagaimana cara mendapatkan sertifikat?</summary>
         <p>
           Kamu akan mendapatkan sertifikat setelah menyelesaikan kursus dan kuis
@@ -154,14 +211,18 @@
     </section>
 
     <footer>
+      <!-- Bagian bawah halaman -->
       <p>&copy; 2025 EduPro. All rights reserved.</p>
+      <!-- Hak cipta -->
     </footer>
 
     <script src="popup.js"></script>
+    <!-- Menghubungkan script popup promo -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Menggunakan library AOS (animasi saat scroll) -->
     <!-- AOS JS -->
     <script>
-      AOS.init();
+      AOS.init(); // Menjalankan animasi AOS ketika halaman di-scroll
     </script>
   </body>
 </html>
