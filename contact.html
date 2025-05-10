@@ -1,122 +1,80 @@
 <!DOCTYPE html>
-<!-- Mendeklarasikan bahwa ini adalah dokumen HTML5 -->
 <html lang="id">
-  <!-- Bahasa utama dokumen adalah Bahasa Indonesia -->
-
   <head>
     <meta charset="UTF-8" />
-    <!-- Mengatur karakter ke UTF-8 agar bisa menampilkan berbagai karakter -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Agar tampil responsif di semua perangkat -->
     <title>Kontak | EduPro</title>
-    <!-- Judul halaman di tab browser -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Menghubungkan ke file CSS eksternal -->
   </head>
 
   <body class="dark-theme">
-    <!-- Memulai isi halaman dengan tema gelap -->
-
     <header>
-      <!-- Bagian atas halaman -->
       <div class="logo">
-        <!-- Logo perusahaan -->
-        <img src="images/edupro-logo-hori.png" <!-- Gambar logo -- />
-        alt="EduPro Logo"
-        <!-- Teks alternatif jika gambar gagal dimuat -->
-        style="height: 40px"
-        <!-- Ukuran tinggi logo -->
+        <img
+          src="images/edupro-logo-hori.png"
+          alt="EduPro Logo"
+          style="height: 40px"
         />
       </div>
-
       <nav>
-        <!-- Navigasi utama -->
         <ul>
           <li><a href="index.html">Home</a></li>
-          <!-- Menu ke halaman utama -->
           <li><a href="about.html">About</a></li>
-          <!-- Menu ke halaman about -->
           <li><a href="features.html">Fitur</a></li>
-          <!-- Menu ke halaman fitur -->
           <li><a href="contact.html">Kontak</a></li>
-          <!-- Menu ke halaman kontak (halaman ini) -->
         </ul>
       </nav>
     </header>
 
     <main style="padding: 60px 40px; max-width: 600px; margin: auto">
-      <!-- Konten utama -->
       <h1 style="text-align: center; margin-bottom: 10px">
         Daftar & Mulai Belajar
       </h1>
-      <!-- Judul form -->
-
       <p style="text-align: center; color: #aaa; margin-bottom: 30px">
         Isi formulir di bawah ini untuk memulai perjalanan belajar Anda bersama
         EduPro.
       </p>
-      <!-- Deskripsi singkat ajakan mengisi form -->
 
       <form
         onsubmit="return handleSubmit()"
-        <!--
-        Fungsi
-        JavaScript
-        saat
-        form
-        disubmit
-        --
+        style="
+          background-color: #1e1e1e;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 0 20px rgba(128, 216, 255, 0.08);
+        "
       >
-        style="background-color: #1e1e1e; padding: 30px; border-radius: 12px;
-        box-shadow: 0 0 20px rgba(128, 216, 255, 0.08);" >
-        <!-- Formulir pendaftaran user -->
-
         <label for="name">Nama Lengkap:</label>
-        <!-- Label input nama -->
         <input type="text" id="name" name="name" required />
-        <!-- Input nama, wajib diisi -->
 
         <label for="email">Email:</label>
-        <!-- Label input email -->
         <input type="email" id="email" name="email" required />
-        <!-- Input email, wajib diisi -->
 
         <label for="interest">Minat Belajar:</label>
-        <!-- Label untuk select -->
         <select id="interest" name="interest" required>
-          <!-- Dropdown pilihan minat belajar -->
           <option value="">-- Pilih Minat --</option>
-          <!-- Pilihan kosong default -->
           <option>Web Development</option>
-          <!-- Pilihan 1 -->
           <option>Data Science</option>
-          <!-- Pilihan 2 -->
           <option>Cybersecurity</option>
-          <!-- Pilihan 3 -->
           <option>UI/UX Design</option>
-          <!-- Pilihan 4 -->
         </select>
 
         <button type="submit">Kirim</button>
-        <!-- Tombol kirim form -->
       </form>
 
       <p class="contact-cta">
         💡 Belajar tanpa batas. Daftar sekarang & nikmati akses gratis!
       </p>
-      <!-- Teks CTA tambahan di bawah form -->
     </main>
 
     <footer>
-      <!-- Bagian bawah halaman -->
       <p>&copy; 2025 EduPro. All rights reserved.</p>
-      <!-- Hak cipta -->
     </footer>
 
     <script>
       function handleSubmit() {
-        alert("Formulir berhasil dikirim! Terima kasih telah mendaftar."); // Menampilkan pesan setelah form dikirim
-        return false; // Mencegah reload halaman setelah klik kirim
+        alert("Formulir berhasil dikirim! Terima kasih telah mendaftar.");
+        return false;
       }
     </script>
   </body>

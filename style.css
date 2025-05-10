@@ -1,103 +1,103 @@
 /* ======= Reset & Global Styles ======= */
 * {
-  margin: 0; /* Hilangkan margin default semua elemen */
-  padding: 0; /* Hilangkan padding default semua elemen */
-  box-sizing: border-box; /* Memastikan ukuran padding tidak menambah lebar/tinggi total */
-  font-family: "Segoe UI", sans-serif; /* Gunakan font modern */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body.dark-theme {
-  background-color: #0f1115; /* Warna latar belakang gelap */
-  color: #f0f0f0; /* Warna teks terang */
-  line-height: 1.6; /* Jarak antar baris teks */
+  background-color: #0f1115;
+  color: #f0f0f0;
+  line-height: 1.6;
 }
 
 a {
-  color: #80d8ff; /* Warna link */
-  text-decoration: none; /* Hilangkan garis bawah link */
+  color: #80d8ff;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline; /* Tambahkan garis bawah saat hover */
+  text-decoration: underline;
 }
 
 /* ======= Header ======= */
 header {
-  display: flex; /* Layout horizontal */
-  justify-content: space-between; /* Logo kiri, menu kanan */
-  align-items: center; /* Pusatkan vertikal */
-  padding: 20px 40px; /* Spasi dalam header */
-  background-color: #131719; /* Warna latar belakang header */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Bayangan bawah */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #131719;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .logo img {
-  height: 40px; /* Ukuran logo */
+  height: 40px;
 }
 
 nav ul {
-  display: flex; /* Menu horizontal */
-  list-style: none; /* Hilangkan bullet list */
+  display: flex;
+  list-style: none;
 }
 
 nav li {
-  margin-left: 20px; /* Spasi antar menu */
+  margin-left: 20px;
 }
 
 nav a {
-  font-weight: 500; /* Tebal sedang */
-  padding: 8px 12px; /* Spasi dalam tombol menu */
-  border-radius: 6px; /* Sudut membulat */
-  transition: background 0.3s; /* Transisi halus saat hover */
-  color: #80d8ff; /* Warna teks menu */
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+  color: #80d8ff;
   text-decoration: none;
 }
 
 nav a:hover {
-  background-color: #292d36; /* Warna latar saat hover */
+  background-color: #292d36;
 }
 
 /* ======= Hero Section ======= */
 .hero {
-  display: flex; /* Dua kolom: teks & gambar */
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 60px; /* Ruang besar atas dan bawah */
-  flex-wrap: wrap; /* Responsif di layar kecil */
+  padding: 100px 60px;
+  flex-wrap: wrap;
 }
 
 .hero-text {
-  max-width: 550px; /* Batasi lebar teks */
+  max-width: 550px;
 }
 
 .hero-text h1 {
-  font-size: 36px; /* Ukuran besar untuk judul utama */
+  font-size: 36px;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .hero-text p {
   font-size: 18px;
-  color: #cccccc; /* Warna teks abu */
+  color: #cccccc;
   margin-bottom: 30px;
 }
 
 .hero-image img {
-  max-width: 450px; /* Ukuran gambar maksimal */
-  width: 100%; /* Responsif */
+  max-width: 450px;
+  width: 100%;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(128, 216, 255, 0.2);
 }
 
 .hero-text a {
-  margin-right: 30px; /* Jarak antar tombol */
+  margin-right: 30px;
 }
 
 /* ======= Button ======= */
 .btn {
   display: inline-block;
-  background-color: #80d8ff; /* Warna biru muda */
-  color: #0f1115; /* Warna teks gelap */
+  background-color: #80d8ff;
+  color: #0f1115;
   padding: 12px 24px;
   border-radius: 6px;
   font-weight: bold;
@@ -105,7 +105,7 @@ nav a:hover {
 }
 
 .btn:hover {
-  background-color: #4ec3e0; /* Biru lebih terang saat hover */
+  background-color: #4ec3e0;
 }
 
 /* ======= Footer ======= */
@@ -113,11 +113,10 @@ footer {
   text-align: center;
   padding: 20px;
   background-color: #1a1d23;
-  color: #888; /* Abu terang */
+  color: #888;
   margin-top: 60px;
 }
 
-/* ======= Testimoni ======= */
 .testimonial-boxes {
   display: flex;
   flex-wrap: wrap;
@@ -146,7 +145,6 @@ footer {
   color: #80d8ff;
 }
 
-/* ======= Statistik ======= */
 .stats-grid {
   display: flex;
   flex-wrap: wrap;
@@ -175,7 +173,6 @@ footer {
   font-size: 16px;
 }
 
-/* ======= FAQ (Acordion) ======= */
 .faq-item {
   background-color: #1e1e1e;
   margin-bottom: 15px;
@@ -197,9 +194,8 @@ footer {
   color: #ccc;
 }
 
-/* ======= Tombol Glowing ======= */
 .btn-glow {
-  background: #8e2de2; /* Warna ungu */
+  background: #8e2de2;
   color: #fff;
   padding: 14px 28px;
   font-size: 16px;
@@ -216,7 +212,6 @@ footer {
   box-shadow: 0 0 25px #a070f0;
 }
 
-/* ======= Popup Promo ======= */
 .promo-modal {
   display: none;
   position: fixed;
@@ -250,7 +245,7 @@ footer {
 }
 
 .promo-content .highlight {
-  color: #ffcc00; /* Kuning mencolok */
+  color: #ffcc00;
 }
 
 .big-discount {
@@ -279,7 +274,7 @@ footer {
   display: none;
 }
 
-/* ======= Animasi ======= */
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -300,7 +295,6 @@ footer {
   }
 }
 
-/* ======= Section "Why Choose Us" ======= */
 .why-container {
   display: flex;
   flex-wrap: wrap;
@@ -332,7 +326,6 @@ footer {
   box-shadow: 0 0 20px rgba(128, 216, 255, 0.2);
 }
 
-/* ======= About Section ======= */
 .about-grid {
   display: flex;
   flex-wrap: wrap;
@@ -359,7 +352,6 @@ footer {
   padding-left: 20px;
 }
 
-/* ======= Tabel Umum & Perbandingan ======= */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -395,7 +387,7 @@ table td:first-child {
   text-align: left;
 }
 
-/* ======= Versi Tabel Khusus Perbandingan ======= */
+/* TABEL PERBANDINGAN */
 .comparison-table {
   width: 100%;
   max-width: 850px;
@@ -435,16 +427,15 @@ table td:first-child {
 }
 
 .icon-yes {
-  color: #4caf50;
+  color: #4caf50; /* Hijau */
   font-size: 18px;
 }
 
 .icon-no {
-  color: #ff5252;
+  color: #ff5252; /* Merah */
   font-size: 18px;
 }
 
-/* ======= Fitur EduPro ======= */
 .features-grid {
   display: flex;
   flex-wrap: wrap;
@@ -478,7 +469,6 @@ table td:first-child {
   color: #80d8ff;
 }
 
-/* ======= Formulir Kontak ======= */
 form {
   background-color: #1e1e1e;
   padding: 30px;

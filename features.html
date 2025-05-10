@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<!-- Mendeklarasikan bahwa ini adalah dokumen HTML5 -->
 <html lang="id">
-  <!-- Bahasa utama dokumen adalah Bahasa Indonesia -->
-
   <head>
     <meta charset="UTF-8" />
-    <!-- Mengatur karakter encoding ke UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Membuat tampilan responsif di berbagai perangkat -->
     <title>Fitur EduPro</title>
-    <!-- Judul halaman di tab browser -->
 
-    <!-- CSS internal untuk styling halaman ini -->
     <style>
       body {
-        margin: 0; /* Menghilangkan margin default */
-        font-family: "Segoe UI", sans-serif; /* Font utama */
-        background-color: #0f1115; /* Warna latar belakang tema gelap */
-        color: #fff; /* Warna teks utama */
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #0f1115;
+        color: #fff;
       }
 
       header {
@@ -25,37 +18,37 @@
         justify-content: space-between;
         align-items: center;
         padding: 20px 40px;
-        background-color: #131719; /* Warna gelap untuk header */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Efek bayangan */
+        background-color: #131719;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
       }
 
       header .logo img {
-        height: 40px; /* Ukuran tinggi logo */
+        height: 40px;
       }
 
       nav ul {
-        list-style: none; /* Menghilangkan bullet pada list */
-        display: flex; /* Menyusun horizontal */
-        gap: 20px; /* Jarak antar menu */
+        list-style: none;
+        display: flex;
+        gap: 20px;
       }
 
       nav ul li a {
-        color: #80d8ff; /* Warna teks menu */
-        text-decoration: none; /* Menghilangkan garis bawah */
+        color: #80d8ff;
+        text-decoration: none;
         font-weight: 500;
       }
 
       nav li {
-        margin-left: 20px; /* Jarak kiri antar menu */
+        margin-left: 20px;
       }
 
       h1,
       h2 {
-        text-align: center; /* Pusatkan heading */
+        text-align: center;
       }
 
       main {
-        padding: 60px 40px; /* Spasi isi utama */
+        padding: 60px 40px;
       }
 
       .features-grid {
@@ -67,29 +60,29 @@
       }
 
       .feature-card {
-        background-color: #1e1e1e; /* Warna kotak fitur */
+        background-color: #1e1e1e;
         padding: 25px;
         border-radius: 12px;
         width: 280px;
         text-align: center;
         color: #f0f0f0;
-        box-shadow: 0 0 15px rgba(128, 216, 255, 0.08); /* Bayangan halus */
+        box-shadow: 0 0 15px rgba(128, 216, 255, 0.08);
         transition: transform 0.3s ease;
       }
 
       .feature-card:hover {
-        transform: translateY(-5px); /* Efek melayang saat hover */
+        transform: translateY(-5px);
         box-shadow: 0 0 25px rgba(128, 216, 255, 0.2);
       }
 
       .feature-card img {
-        height: 60px; /* Ukuran ikon fitur */
+        height: 60px;
         margin-bottom: 20px;
       }
 
       .feature-card h3 {
         margin-bottom: 10px;
-        color: #80d8ff; /* Warna judul fitur */
+        color: #80d8ff;
       }
 
       .video-preview {
@@ -104,7 +97,7 @@
       }
 
       .btn-glow {
-        background: #8e2de2; /* Warna ungu glowing */
+        background: #8e2de2;
         color: #fff;
         padding: 12px 24px;
         font-size: 16px;
@@ -132,33 +125,25 @@
 
   <body>
     <header>
-      <!-- Bagian atas halaman -->
       <div class="logo">
-        <img src="images/edupro-logo-hori.png" <!-- Gambar logo EduPro -- />
-        alt="EduPro Logo"
-        <!-- Teks alternatif logo -->
-        style="height: 40px"
-        <!-- Tinggi logo -->
+        <img
+          src="images/edupro-logo-hori.png"
+          alt="EduPro Logo"
+          style="height: 40px"
         />
       </div>
       <nav>
-        <!-- Navigasi -->
         <ul>
           <li><a href="index.html">Home</a></li>
-          <!-- Menu Home -->
           <li><a href="about.html">About</a></li>
-          <!-- Menu About -->
           <li><a href="features.html">Fitur</a></li>
-          <!-- Menu Fitur (halaman ini) -->
           <li><a href="contact.html">Kontak</a></li>
-          <!-- Menu Kontak -->
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="features-section">
-        <!-- Bagian fitur utama -->
         <h1>Fitur Unggulan EduPro</h1>
         <p
           style="
@@ -174,9 +159,7 @@
         </p>
 
         <div class="features-grid">
-          <!-- Kotak fitur 3 kolom -->
           <div class="feature-card">
-            <!-- Fitur 1 -->
             <img src="images/ai-pembelajaran.png" alt="AI Adaptif" />
             <h3>AI Pembelajaran</h3>
             <p>
@@ -184,13 +167,11 @@
             </p>
           </div>
           <div class="feature-card">
-            <!-- Fitur 2 -->
             <img src="images/kuis-interaktif.png" alt="Kuis Interaktif" />
             <h3>Kuis Interaktif</h3>
             <p>Uji pemahaman dengan soal adaptif dan leaderboard realtime.</p>
           </div>
           <div class="feature-card">
-            <!-- Fitur 3 -->
             <img src="images/video-hd.png" alt="Video Pembelajaran" />
             <h3>Video HD</h3>
             <p>
@@ -202,7 +183,6 @@
       </section>
 
       <section class="video-preview">
-        <!-- Bagian cuplikan video -->
         <h2>Cuplikan Pembelajaran</h2>
         <p style="color: #aaa">
           Simak potongan materi asli dari EduPro yang disampaikan oleh mentor
@@ -220,31 +200,27 @@
         >
           <iframe
             src="video/MONO_NO_AWARE.mp4"
-            <!--
-            Link
-            video
-            cuplikan
-            (format
-            iframe)
-            --
+            frameborder="0"
+            allowfullscreen
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
           >
-            frameborder="0" allowfullscreen style="position: absolute; top: 0;
-            left: 0; width: 100%; height: 100%;">
           </iframe>
         </div>
       </section>
 
       <section style="text-align: center; margin-top: 50px">
-        <!-- CTA -->
         <a href="contact.html" class="btn-glow">Coba Fitur Sekarang</a>
-        <!-- Tombol daftar -->
       </section>
     </main>
 
     <footer>
-      <!-- Bagian bawah halaman -->
       <p>&copy; 2025 EduPro. All rights reserved.</p>
-      <!-- Copyright -->
     </footer>
   </body>
 </html>
