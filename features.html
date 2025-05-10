@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitur EduPro</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #0f1115;
+        color: #fff;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 40px;
+        background-color: #131719;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+      }
+
+      header .logo img {
+        height: 40px;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li a {
+        color: #80d8ff;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      nav li {
+        margin-left: 20px;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      main {
+        padding: 60px 40px;
+      }
+
+      .features-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      .feature-card {
+        background-color: #1e1e1e;
+        padding: 25px;
+        border-radius: 12px;
+        width: 280px;
+        text-align: center;
+        color: #f0f0f0;
+        box-shadow: 0 0 15px rgba(128, 216, 255, 0.08);
+        transition: transform 0.3s ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(128, 216, 255, 0.2);
+      }
+
+      .feature-card img {
+        height: 60px;
+        margin-bottom: 20px;
+      }
+
+      .feature-card h3 {
+        margin-bottom: 10px;
+        color: #80d8ff;
+      }
+
+      .video-preview {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .video-preview video {
+        margin-top: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(128, 216, 255, 0.3);
+      }
+
+      .btn-glow {
+        background: #8e2de2;
+        color: #fff;
+        padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 12px #8e2de2;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .btn-glow:hover {
+        background: #5e1dad;
+        box-shadow: 0 0 20px #a070f0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #1c1f26;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="images/edupro-logo-hori.png"
+          alt="EduPro Logo"
+          style="height: 40px"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Fitur</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="features-section">
+        <h1>Fitur Unggulan EduPro</h1>
+        <p
+          style="
+            text-align: center;
+            color: #aaa;
+            font-size: 16px;
+            max-width: 700px;
+            margin: 0 auto 40px;
+          "
+        >
+          EduPro hadir dengan teknologi terbaru untuk memastikan pembelajaran
+          Anda tidak hanya efektif, tapi juga menyenangkan dan fleksibel.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <img src="images/ai-pembelajaran.png" alt="AI Adaptif" />
+            <h3>AI Pembelajaran</h3>
+            <p>
+              Rekomendasi materi sesuai kecepatan dan gaya belajar pengguna.
+            </p>
+          </div>
+          <div class="feature-card">
+            <img src="images/kuis-interaktif.png" alt="Kuis Interaktif" />
+            <h3>Kuis Interaktif</h3>
+            <p>Uji pemahaman dengan soal adaptif dan leaderboard realtime.</p>
+          </div>
+          <div class="feature-card">
+            <img src="images/video-hd.png" alt="Video Pembelajaran" />
+            <h3>Video HD</h3>
+            <p>
+              Materi disampaikan oleh instruktur profesional dalam format video
+              HD.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-preview">
+        <h2>Cuplikan Pembelajaran</h2>
+        <p style="color: #aaa">
+          Simak potongan materi asli dari EduPro yang disampaikan oleh mentor
+          profesional.
+        </p>
+        <div
+          style="
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(128, 216, 255, 0.3);
+          "
+        >
+          <iframe
+            src="video/MONO_NO_AWARE.mp4"
+            frameborder="0"
+            allowfullscreen
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+          >
+          </iframe>
+        </div>
+      </section>
+
+      <section style="text-align: center; margin-top: 50px">
+        <a href="contact.html" class="btn-glow">Coba Fitur Sekarang</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 EduPro. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

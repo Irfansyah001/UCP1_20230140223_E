@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak | EduPro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="dark-theme">
+    <header>
+      <div class="logo">
+        <img
+          src="images/edupro-logo-hori.png"
+          alt="EduPro Logo"
+          style="height: 40px"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="features.html">Fitur</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main style="padding: 60px 40px; max-width: 600px; margin: auto">
+      <h1 style="text-align: center; margin-bottom: 10px">
+        Daftar & Mulai Belajar
+      </h1>
+      <p style="text-align: center; color: #aaa; margin-bottom: 30px">
+        Isi formulir di bawah ini untuk memulai perjalanan belajar Anda bersama
+        EduPro.
+      </p>
+
+      <form
+        onsubmit="return handleSubmit()"
+        style="
+          background-color: #1e1e1e;
+          padding: 30px;
+          border-radius: 12px;
+          box-shadow: 0 0 20px rgba(128, 216, 255, 0.08);
+        "
+      >
+        <label for="name">Nama Lengkap:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="interest">Minat Belajar:</label>
+        <select id="interest" name="interest" required>
+          <option value="">-- Pilih Minat --</option>
+          <option>Web Development</option>
+          <option>Data Science</option>
+          <option>Cybersecurity</option>
+          <option>UI/UX Design</option>
+        </select>
+
+        <button type="submit">Kirim</button>
+      </form>
+
+      <p class="contact-cta">
+        💡 Belajar tanpa batas. Daftar sekarang & nikmati akses gratis!
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 EduPro. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function handleSubmit() {
+        alert("Formulir berhasil dikirim! Terima kasih telah mendaftar.");
+        return false;
+      }
+    </script>
+  </body>
+</html>
